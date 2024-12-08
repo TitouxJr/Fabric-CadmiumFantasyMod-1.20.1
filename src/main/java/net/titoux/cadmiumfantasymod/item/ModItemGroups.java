@@ -22,6 +22,10 @@ public class ModItemGroups {
                         entries.add(ModBlocks.CADMIUM_BLOCK);
                         entries.add(ModBlocks.CADMIUM_ORE);
 
+                        entries.add(ModBlocks.DEEPSLATE_CADMIUM_ORE);
+                        entries.add(ModBlocks.NETHER_CADMIUM_ORE);
+                        entries.add(ModBlocks.END_CADMIUM_ORE);
+
                     }).build());
 
     public static void registerModItemGroups() {

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+    "pattern": [
+        "###",
+        "###",
+        "###"
+    ],
+  "key": {
+    "#": {
+      "item": "cadmiumfantasymod:cadmium_ingot"
+    }
+  },
+  "result": {
+    "item": "cadmiumfantasymod:cadmium_block"
+  }
+}

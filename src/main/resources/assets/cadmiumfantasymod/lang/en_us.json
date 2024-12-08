@@ -4,6 +4,9 @@
 
   "block.cadmiumfantasymod.cadmium_block": "Block Of Cadmium",
   "block.cadmiumfantasymod.cadmium_ore": "Cadmium Ore",
+  "block.cadmiumfantasymod.deepslate_cadmium_ore": "Deepslate Cadmium Ore",
+  "block.cadmiumfantasymod.nether_cadmium_ore": "Nether Cadmium Ore",
+  "block.cadmiumfantasymod.end_cadmium_ore": "End Cadmium Ore",
 
   "itemgroup.cadmium": "Cadmium Group"
 }
