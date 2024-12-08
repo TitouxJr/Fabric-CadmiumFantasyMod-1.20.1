@@ -8,6 +8,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import net.titoux.cadmiumfantasymod.CadmiumFantasyMod;
+import net.titoux.cadmiumfantasymod.block.ModBlocks;
 
 public class ModItemGroups {
 
@@ -17,6 +18,10 @@ public class ModItemGroups {
                     .icon(() -> new ItemStack(ModItems.CADMIUM_INGOT)).entries((displayContext, entries) -> {
                         entries.add(ModItems.CADMIUM_INGOT);
                         entries.add(ModItems.RAW_CADMIUM);
+
+                        entries.add(ModBlocks.CADMIUM_BLOCK);
+                        entries.add(ModBlocks.CADMIUM_ORE);
+
                     }).build());
 
     public static void registerModItemGroups() {

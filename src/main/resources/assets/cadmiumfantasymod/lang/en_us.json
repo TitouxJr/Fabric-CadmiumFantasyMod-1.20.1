@@ -2,5 +2,8 @@
   "item.cadmiumfantasymod.cadmium_ingot": "Cadmium Ingot",
   "item.cadmiumfantasymod.raw_cadmium": "Raw Cadmium",
 
+  "block.cadmiumfantasymod.cadmium_block": "Block Of Cadmium",
+  "block.cadmiumfantasymod.cadmium_ore": "Cadmium Ore",
+
   "itemgroup.cadmium": "Cadmium Group"
 }
