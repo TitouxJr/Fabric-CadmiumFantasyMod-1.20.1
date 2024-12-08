@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "cadmiumfantasymod",
+	"version": "${version}",
+	"name": "CadmiumFantasyMod",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Titoux"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/cadmiumfantasymod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.titoux.cadmiumfantasymod.CadmiumFantasyMod"
+		],
+		"client": [
+			"net.titoux.cadmiumfantasymod.CadmiumFantasyModClient"
+		],
+		"fabric-datagen": [
+			"net.titoux.cadmiumfantasymod.CadmiumFantasyModDataGenerator"
+		]
+	},
+	"mixins": [
+		"cadmiumfantasymod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
