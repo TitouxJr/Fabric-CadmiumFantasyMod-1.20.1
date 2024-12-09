@@ -19,6 +19,12 @@ public class ModItemGroups {
                         entries.add(ModItems.CADMIUM_INGOT);
                         entries.add(ModItems.RAW_CADMIUM);
 
+                        entries.add(ModItems.METAL_DETECTOR);
+
+                        entries.add(ModItems.TOMATO);
+
+                        entries.add(ModBlocks.SOUND_BLOCK);
+
                         entries.add(ModBlocks.CADMIUM_BLOCK);
                         entries.add(ModBlocks.CADMIUM_ORE);
 

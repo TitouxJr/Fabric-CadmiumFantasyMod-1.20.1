@@ -12,6 +12,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.titoux.cadmiumfantasymod.CadmiumFantasyMod;
+import net.titoux.cadmiumfantasymod.block.custom.SoundBlock;
 
 public class ModBlocks {
     public static final Block CADMIUM_BLOCK = registerBlock("cadmium_block",
@@ -25,6 +26,9 @@ public class ModBlocks {
             new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.NETHER_GOLD_ORE).strength(1.5f), UniformIntProvider.create(2, 5)));
     public static final Block END_CADMIUM_ORE = registerBlock("end_cadmium_ore",
             new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.END_STONE).strength(2f), UniformIntProvider.create(2, 5)));
+
+    public static final Block SOUND_BLOCK = registerBlock("sound_block",
+            new SoundBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

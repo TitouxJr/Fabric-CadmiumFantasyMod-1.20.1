@@ -9,10 +9,16 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.titoux.cadmiumfantasymod.CadmiumFantasyMod;
+import net.titoux.cadmiumfantasymod.item.custom.MetalDetectorItem;
 
 public class ModItems {
-    public static  final Item CADMIUM_INGOT = registerItem("cadmium_ingot", new Item(new FabricItemSettings()));
+    public static final Item CADMIUM_INGOT = registerItem("cadmium_ingot", new Item(new FabricItemSettings()));
     public static final Item RAW_CADMIUM = registerItem("raw_cadmium", new Item(new FabricItemSettings()));
+
+    public static final Item METAL_DETECTOR = registerItem("metal_detector",
+            new MetalDetectorItem(new FabricItemSettings().maxDamage(64)));
+
+    public static final Item TOMATO = registerItem("tomato", new Item(new FabricItemSettings().food(ModFoodComponents.TOMATO)));
 
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
         entries.add(CADMIUM_INGOT);

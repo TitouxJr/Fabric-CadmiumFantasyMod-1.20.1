@@ -1,12 +1,13 @@
 {
   "item.cadmiumfantasymod.cadmium_ingot": "Cadmium Ingot",
   "item.cadmiumfantasymod.raw_cadmium": "Raw Cadmium",
-
+  "item.cadmiumfantasymod.metal_detector": "Metal Detector",
+  "item.cadmiumfantasymod.tomato": "Tomato",
   "block.cadmiumfantasymod.cadmium_block": "Block Of Cadmium",
   "block.cadmiumfantasymod.cadmium_ore": "Cadmium Ore",
   "block.cadmiumfantasymod.deepslate_cadmium_ore": "Deepslate Cadmium Ore",
   "block.cadmiumfantasymod.nether_cadmium_ore": "Nether Cadmium Ore",
   "block.cadmiumfantasymod.end_cadmium_ore": "End Cadmium Ore",
-
+  "block.cadmiumfantasymod.sound_block": "Sound Block",
   "itemgroup.cadmium": "Cadmium Group"
 }
