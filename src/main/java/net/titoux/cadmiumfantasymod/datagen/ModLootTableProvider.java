@@ -17,7 +17,7 @@ import net.titoux.cadmiumfantasymod.block.ModBlocks;
 import net.titoux.cadmiumfantasymod.item.ModItems;
 
 public class ModLootTableProvider extends FabricBlockLootTableProvider {
-    protected ModLootTableProvider(FabricDataOutput dataOutput) {
+    public ModLootTableProvider(FabricDataOutput dataOutput) {
         super(dataOutput);
     }
 
