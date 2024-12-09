@@ -17,14 +17,14 @@ public class ModBlocks {
     public static final Block CADMIUM_BLOCK = registerBlock("cadmium_block",
             new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
     public static final Block CADMIUM_ORE = registerBlock("cadmium_ore",
-            new Block(FabricBlockSettings.copyOf(Blocks.IRON_ORE)));
+            new Block(FabricBlockSettings.copyOf(Blocks.IRON_ORE).strength(2f)));
 
     public static final Block DEEPSLATE_CADMIUM_ORE = registerBlock("deepslate_cadmium_ore",
-            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.DEEPSLATE).strength(4f), UniformIntProvider.create(2, 5)));
+            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.DEEPSLATE).strength(2f), UniformIntProvider.create(2, 5)));
     public static final Block NETHER_CADMIUM_ORE = registerBlock("nether_cadmium_ore",
             new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.NETHER_GOLD_ORE).strength(1.5f), UniformIntProvider.create(2, 5)));
     public static final Block END_CADMIUM_ORE = registerBlock("end_cadmium_ore",
-            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.END_STONE).strength(4f), UniformIntProvider.create(2, 5)));
+            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.END_STONE).strength(2f), UniformIntProvider.create(2, 5)));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
