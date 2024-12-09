@@ -17,7 +17,7 @@ public class ModBlocks {
     public static final Block CADMIUM_BLOCK = registerBlock("cadmium_block",
             new Block(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
     public static final Block CADMIUM_ORE = registerBlock("cadmium_ore",
-            new Block(FabricBlockSettings.copyOf(Blocks.IRON_ORE).strength(2f)));
+            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.IRON_ORE).strength(2f)));
 
     public static final Block DEEPSLATE_CADMIUM_ORE = registerBlock("deepslate_cadmium_ore",
             new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.DEEPSLATE).strength(2f), UniformIntProvider.create(2, 5)));
