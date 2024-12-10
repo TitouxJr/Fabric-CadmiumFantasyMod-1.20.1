@@ -2,9 +2,7 @@ package net.titoux.cadmiumfantasymod.block;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
-import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.ExperienceDroppingBlock;
+import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -29,6 +27,29 @@ public class ModBlocks {
 
     public static final Block SOUND_BLOCK = registerBlock("sound_block",
             new SoundBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
+
+    public static final Block CADMIUM_STAIRS = registerBlock("cadmium_stairs",
+            new StairsBlock(ModBlocks.CADMIUM_BLOCK.getDefaultState(), FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
+    public static final Block CADMIUM_SLAB = registerBlock("cadmium_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
+
+    public static final Block CADMIUM_BUTTON = registerBlock("cadmium_button",
+            new ButtonBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK), BlockSetType.IRON, 10, true));
+    public static final Block CADMIUM_PRESSURE_PLATE = registerBlock("cadmium_pressure_plate",
+            new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING,
+                    FabricBlockSettings.copyOf(Blocks.IRON_BLOCK), BlockSetType.IRON));
+
+    public static final Block CADMIUM_FENCE = registerBlock("cadmium_fence",
+            new FenceBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
+    public static final Block CADMIUM_FENCE_GATE = registerBlock("cadmium_fence_gate",
+            new FenceGateBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK), WoodType.ACACIA));
+    public static final Block CADMIUM_WALL = registerBlock("cadmium_wall",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK)));
+
+    public static final Block CADMIUM_DOOR = registerBlock("cadmium_door",
+            new DoorBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).nonOpaque(), BlockSetType.IRON));
+    public static final Block CADMIUM_TRAPDOOR = registerBlock("cadmium_trapdoor",
+            new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.IRON_BLOCK).nonOpaque(), BlockSetType.IRON));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

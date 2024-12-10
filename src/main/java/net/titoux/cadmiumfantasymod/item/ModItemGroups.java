@@ -23,6 +23,8 @@ public class ModItemGroups {
 
                         entries.add(ModItems.TOMATO);
 
+                        entries.add(ModItems.CADMIUM_STAFF);
+
                         entries.add(ModBlocks.SOUND_BLOCK);
 
                         entries.add(ModBlocks.CADMIUM_BLOCK);
@@ -31,6 +33,16 @@ public class ModItemGroups {
                         entries.add(ModBlocks.DEEPSLATE_CADMIUM_ORE);
                         entries.add(ModBlocks.NETHER_CADMIUM_ORE);
                         entries.add(ModBlocks.END_CADMIUM_ORE);
+
+                        entries.add(ModBlocks.CADMIUM_STAIRS);
+                        entries.add(ModBlocks.CADMIUM_SLAB);
+                        entries.add(ModBlocks.CADMIUM_WALL);
+                        entries.add(ModBlocks.CADMIUM_FENCE);
+                        entries.add(ModBlocks.CADMIUM_FENCE_GATE);
+                        entries.add(ModBlocks.CADMIUM_BUTTON);
+                        entries.add(ModBlocks.CADMIUM_PRESSURE_PLATE);
+                        entries.add(ModBlocks.CADMIUM_DOOR);
+                        entries.add(ModBlocks.CADMIUM_TRAPDOOR);
 
                     }).build());
 

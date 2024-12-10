@@ -20,6 +20,9 @@ public class ModItems {
 
     public static final Item TOMATO = registerItem("tomato", new Item(new FabricItemSettings().food(ModFoodComponents.TOMATO)));
 
+    public static final Item CADMIUM_STAFF = registerItem("cadmium_staff",
+            new Item(new FabricItemSettings().maxCount(1)));
+
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
         entries.add(CADMIUM_INGOT);
         entries.add(RAW_CADMIUM);

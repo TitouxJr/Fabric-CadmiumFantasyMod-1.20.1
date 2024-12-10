@@ -30,6 +30,18 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.DEEPSLATE_CADMIUM_ORE, copperLikeOreDrops(ModBlocks.DEEPSLATE_CADMIUM_ORE, ModItems.RAW_CADMIUM));
         addDrop(ModBlocks.NETHER_CADMIUM_ORE, copperLikeOreDrops(ModBlocks.NETHER_CADMIUM_ORE, ModItems.RAW_CADMIUM));
         addDrop(ModBlocks.END_CADMIUM_ORE, copperLikeOreDrops(ModBlocks.END_CADMIUM_ORE, ModItems.RAW_CADMIUM));
+
+        addDrop(ModBlocks.CADMIUM_STAIRS);
+        addDrop(ModBlocks.CADMIUM_TRAPDOOR);
+        addDrop(ModBlocks.CADMIUM_WALL);
+        addDrop(ModBlocks.CADMIUM_FENCE);
+        addDrop(ModBlocks.CADMIUM_FENCE_GATE);
+        addDrop(ModBlocks.CADMIUM_BUTTON);
+        addDrop(ModBlocks.CADMIUM_PRESSURE_PLATE);
+
+        addDrop(ModBlocks.CADMIUM_DOOR, doorDrops(ModBlocks.CADMIUM_DOOR));
+        addDrop(ModBlocks.CADMIUM_SLAB, slabDrops(ModBlocks.CADMIUM_SLAB));
+
     }
 
     public LootTable.Builder copperLikeOreDrops(Block drop, Item item) {
