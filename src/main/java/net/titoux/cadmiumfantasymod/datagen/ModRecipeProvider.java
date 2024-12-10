@@ -42,5 +42,67 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.STONE), conditionsFromItem(Items.STONE))
                 .criterion(hasItem(ModItems.CADMIUM_INGOT), conditionsFromItem(ModItems.CADMIUM_INGOT))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.RAW_CADMIUM)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.CADMIUM_PICKAXE, 1)
+                .pattern("CCC")
+                .pattern(" S ")
+                .pattern(" S ")
+                .input('C', ModItems.CADMIUM_INGOT)
+                .input('S', Items.STICK)
+                .criterion(hasItem(ModItems.CADMIUM_INGOT), conditionsFromItem(ModItems.CADMIUM_INGOT))
+                .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.CADMIUM_PICKAXE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.CADMIUM_SWORD, 1)
+                .pattern(" C ")
+                .pattern(" C ")
+                .pattern(" S ")
+                .input('C', ModItems.CADMIUM_INGOT)
+                .input('S', Items.STICK)
+                .criterion(hasItem(ModItems.CADMIUM_INGOT), conditionsFromItem(ModItems.CADMIUM_INGOT))
+                .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.CADMIUM_SWORD)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.CADMIUM_AXE, 1)
+                .pattern("CC ")
+                .pattern("CS ")
+                .pattern(" S ")
+                .input('C', ModItems.CADMIUM_INGOT)
+                .input('S', Items.STICK)
+                .criterion(hasItem(ModItems.CADMIUM_INGOT), conditionsFromItem(ModItems.CADMIUM_INGOT))
+                .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.CADMIUM_AXE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.CADMIUM_SHOVEL, 1)
+                .pattern(" C ")
+                .pattern(" S ")
+                .pattern(" S ")
+                .input('C', ModItems.CADMIUM_INGOT)
+                .input('S', Items.STICK)
+                .criterion(hasItem(ModItems.CADMIUM_INGOT), conditionsFromItem(ModItems.CADMIUM_INGOT))
+                .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.CADMIUM_SHOVEL)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.CADMIUM_HOE, 1)
+                .pattern("CC ")
+                .pattern(" S ")
+                .pattern(" S ")
+                .input('C', ModItems.CADMIUM_INGOT)
+                .input('S', Items.STICK)
+                .criterion(hasItem(ModItems.CADMIUM_INGOT), conditionsFromItem(ModItems.CADMIUM_INGOT))
+                .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.CADMIUM_HOE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.METAL_DETECTOR, 1)
+                .pattern(" I ")
+                .pattern("RIR")
+                .pattern(" S ")
+                .input('I', ModItems.CADMIUM_INGOT)
+                .input('R', Items.REDSTONE)
+                .input('S', Items.STICK)
+                .criterion(hasItem(ModItems.CADMIUM_INGOT), conditionsFromItem(ModItems.CADMIUM_INGOT))
+                .criterion(hasItem(Items.REDSTONE), conditionsFromItem(Items.REDSTONE))
+                .criterion(hasItem(Items.STICK), conditionsFromItem(Items.STICK))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.METAL_DETECTOR)));
     }
 }
