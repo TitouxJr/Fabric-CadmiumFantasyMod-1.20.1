@@ -46,11 +46,12 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.NETHER_CADMIUM_ORE);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL)
-                .add(ModBlocks.SOUND_BLOCK)
                 .add(ModBlocks.DEEPSLATE_CADMIUM_ORE);
 
         getOrCreateTagBuilder(TagKey.of(RegistryKeys.BLOCK, new Identifier("fabric", "needs_tool_level_4")))
                 .add(ModBlocks.END_CADMIUM_ORE);
+        getOrCreateTagBuilder(TagKey.of(RegistryKeys.BLOCK, new Identifier("fabric", "needs_tool_level_5")))
+                .add(ModBlocks.SOUND_BLOCK);
 
         getOrCreateTagBuilder(BlockTags.FENCES)
                 .add(ModBlocks.CADMIUM_FENCE);

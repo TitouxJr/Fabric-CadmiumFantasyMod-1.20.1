@@ -42,5 +42,11 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.METAL_DETECTOR, Models.GENERATED);
         itemModelGenerator.register(ModItems.TOMATO, Models.GENERATED);
         itemModelGenerator.register(ModItems.CADMIUM_STAFF, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.CADMIUM_PICKAXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.CADMIUM_AXE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.CADMIUM_SHOVEL, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.CADMIUM_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.CADMIUM_HOE, Models.HANDHELD);
     }
 }

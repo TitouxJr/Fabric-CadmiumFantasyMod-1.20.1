@@ -25,6 +25,12 @@ public class ModItemGroups {
 
                         entries.add(ModItems.CADMIUM_STAFF);
 
+                        entries.add(ModItems.CADMIUM_PICKAXE);
+                        entries.add(ModItems.CADMIUM_AXE);
+                        entries.add(ModItems.CADMIUM_SHOVEL);
+                        entries.add(ModItems.CADMIUM_SWORD);
+                        entries.add(ModItems.CADMIUM_HOE);
+
                         entries.add(ModBlocks.SOUND_BLOCK);
 
                         entries.add(ModBlocks.CADMIUM_BLOCK);

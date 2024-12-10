@@ -3,8 +3,7 @@ package net.titoux.cadmiumfantasymod.item;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroups;
+import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
@@ -22,6 +21,17 @@ public class ModItems {
 
     public static final Item CADMIUM_STAFF = registerItem("cadmium_staff",
             new Item(new FabricItemSettings().maxCount(1)));
+
+    public static final Item CADMIUM_PICKAXE = registerItem("cadmium_pickaxe",
+            new PickaxeItem(ModToolMaterial.CADMIUM, 2, 2f, new FabricItemSettings()));
+    public static final Item CADMIUM_AXE = registerItem("cadmium_axe",
+            new AxeItem(ModToolMaterial.CADMIUM, 3, 1f, new FabricItemSettings()));
+    public static final Item CADMIUM_SHOVEL = registerItem("cadmium_shovel",
+            new ShovelItem(ModToolMaterial.CADMIUM, 0.5f, 1f, new FabricItemSettings()));
+    public static final Item CADMIUM_SWORD = registerItem("cadmium_sword",
+            new SwordItem(ModToolMaterial.CADMIUM, 5, 3f, new FabricItemSettings()));
+    public static final Item CADMIUM_HOE = registerItem("cadmium_hoe",
+            new HoeItem(ModToolMaterial.CADMIUM, 0, 0f, new FabricItemSettings()));
 
     private static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
         entries.add(CADMIUM_INGOT);
